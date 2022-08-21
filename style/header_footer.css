@@ -16,7 +16,7 @@
 .header__logo{
     font-family: 'Rubik';
     font-weight: 600;
-    font-size: 40px;
+    font-size: 34px;
     line-height: 47px;
     color: #FFFFFF;
 }
@@ -24,13 +24,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 300px;
+    max-width: 280px;
     width: 100%;
-    margin: 0 auto;
+    margin-left: 60px;
 }
 .header__nav-link{
     position: relative;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
 }
@@ -56,10 +56,14 @@
     display: flex;
     align-items: center;
 }
+.header__cabinet__content svg{
+    width: 55px;
+    height: 55px;
+}
 .header__cabinet__title{
     margin-left: 12px;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 38px;
     color: #FFFFFF;
 }
