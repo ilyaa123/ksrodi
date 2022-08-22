@@ -1,5 +1,10 @@
 export const fixedHeader = (header, hero) => {
     const heigthHero = hero.scrollHeight;
+    if (window.scrollY > heigthHero){
+        header.classList.add('header-fixed')
+    } else {
+        header.classList.remove('header-fixed')
+    }
     window.addEventListener('scroll', () => {
         if (window.scrollY > 90){
             header.style.opacity = '0';

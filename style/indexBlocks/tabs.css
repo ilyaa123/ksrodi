@@ -28,6 +28,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.36s ease-in-out;
 }
 .tabs__item-btn::after{
     content: '';
