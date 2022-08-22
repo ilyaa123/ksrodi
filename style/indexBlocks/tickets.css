@@ -1,0 +1,84 @@
+.tickets{
+    padding: 120px 0;
+}
+.tickets__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tickets__title{
+    width: 100%;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    margin-right: 100px;
+}
+.tickets__content{
+    width: 100%;
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+.tickets__header{
+    background: #939393;
+    border-radius: 20px 20px 0;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+.tickets__person{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
+}
+.tickets__form{
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tickets__message{
+    margin: 6px 0 6px;
+    height: 100%;
+    padding: 60px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #242424 #939393;
+}
+.tickets__message::-webkit-scrollbar{
+    width: 12px;
+}
+.tickets__message::-webkit-scrollbar-track {
+    background: #242424;
+}
+.tickets__message::-webkit-scrollbar-thumb {
+    background-color: #939393;
+    border-radius: 20px;
+    border: 3px solid #939393;
+}
+.tickets__message-p{
+    padding: 15px 40px 15px 12px;
+    background: #939393;
+    border-radius: 20px;
+    display: inline;
+    max-width: 320px;
+    margin-bottom: 40px;
+}
+.tickets__answer-admin{
+    align-self: flex-end;
+}
+.tickets__answer-person{
+    align-self: start;
+}
+.tickets__input{
+    border: 5px solid #767676;
+    border-radius: 20px;
+    padding: 20px 25px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}

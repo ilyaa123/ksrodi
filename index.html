@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KsordI - The functionality of our product can help personalize the game according to your preferences.</title>
     <link rel="stylesheet" href="style/index.css">
+    <script src="scripts/index.js" type="module"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
             <div class="header__content">
-                <a href="#"><h2 class="header__logo">KsordI</h2></a>
+                <a href="#hero"><h2 class="header__logo">KsordI</h2></a>
                 <nav class="header__nav">
-                    <a class="header__nav-link" href="#">About</a>
-                    <a class="header__nav-link" href="#">FAQ</a>
-                    <a class="header__nav-link" href="#">Tickets</a>
+                    <a class="header__nav-link" href="#about">About</a>
+                    <a class="header__nav-link" href="#tabs">FAQ</a>
+                    <a class="header__nav-link" href="#tickets">Tickets</a>
                 </nav>
                 <div class="header__cabinet">
                     <p class="header__file-download"></p>
@@ -34,7 +35,7 @@
             </div>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container hero__container">
                 <div class="hero__content">
                     <h1 class="hero__title">KsordI</h1>
@@ -51,9 +52,9 @@
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
             <div class="video__container">
-                <video class="about__video-video" muted loop autoplay>
+                <video class="about__video-video" muted loop>
                     <source src="img/index/movie.mp4" type="video/mp4"/>
                 </video>
             </div>
@@ -77,6 +78,48 @@
                         <li class="about__benefits-item about-item">Unique design</li>
                     </ul>
                     <button class="about-btn">More info/ buy</button>
+                </div>
+            </div>
+        </section>
+        <section class="tabs" id="tabs">
+            <div class="container">
+                <h3 class="tabs__title">Frequently asked Questions</h3>
+                <div class="tabs__item">
+                    <button class="tabs__item-btn tabs__item-btn-active">Why you should choose us?</button>
+                    <p class="tabs__item-content tabs__item-content-active">Because we are all the time to our clients and project. We are constantly developing and making the product better.</p>
+                </div>
+                <div class="tabs__item">
+                    <button class="tabs__item-btn">What additional features do you have?</button>
+                    <p class="tabs__item-content">Because we are all the time to our clients and project. We are constantly developing and making the product better.</p>
+                </div>
+                <div class="tabs__item">
+                    <button class="tabs__item-btn">What additional features do you have?</button>
+                    <p class="tabs__item-content">Because we are all the time to our clients and project. We are constantly developing and making the product better.</p>
+                </div>
+                <div class="tabs__item">
+                    <button class="tabs__item-btn">What additional features do you have?</button>
+                    <p class="tabs__item-content">Because we are all the time to our clients and project. We are constantly developing and making the product better.</p>
+                </div>
+                <div class="tabs__item">
+                    <button class="tabs__item-btn">What additional features do you have?</button>
+                    <p class="tabs__item-content">Because we are all the time to our clients and project. We are constantly developing and making the product better.</p>
+                </div>
+            </div>
+        </section>
+        <section class="tickets" id="tickets">
+            <div class="container tickets__container">
+                <h4 class="tickets__title">Supports give you help in this moment</h4>
+                <div class="tickets__content">
+                    <div class="tickets__header">
+                        <button class="tickets__person">Sign in</button>
+                    </div>
+                    <form class="tickets__form">
+                        <div class="tickets__message">
+                            <p class="tickets__answer-admin tickets__message-p">How to play with rage?</p>
+                            <p class="tickets__answer-person tickets__message-p">On rage funcion</p>
+                        </div>
+                        <input class="tickets__input" type="text" name="message" placeholder="Message...">
+                    </form>
                 </div>
             </div>
         </section>
