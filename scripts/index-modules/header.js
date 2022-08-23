@@ -7,11 +7,9 @@ export const fixedHeader = (header, hero) => {
     }
     window.addEventListener('scroll', () => {
         if (window.scrollY > 90){
-            header.style.opacity = '0';
-            header.style.transform = 'translateY(-90px)';
+            header.classList.add('header__hidden');
         } else {
-            header.style.transform = 'translateY(0)';
-            header.style.opacity = '';
+            header.classList.remove('header__hidden');
         }
         if (window.scrollY > heigthHero){
             header.classList.add('header-fixed')
@@ -33,4 +31,17 @@ export const scrollHeader = (links) => {
         })
       })
     }
+}
+export const mobileMenu = (button, mobile) => {
+    button.addEventListener('click', () => {
+        button.classList.toggle('header__mobile-btn-active');
+        mobile.classList.toggle('header__mobile-active');
+    });
+    const links = mobile.querySelectorAll('.header-mobile__nav-link');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            button.classList.remove('header__mobile-btn-active');
+            mobile.classList.remove('header__mobile-active');
+        });
+    });
 }

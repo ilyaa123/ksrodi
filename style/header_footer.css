@@ -28,7 +28,6 @@
     justify-content: space-between;
     max-width: 280px;
     width: 100%;
-    margin-left: 60px;
 }
 .header__nav-link{
     position: relative;
@@ -69,8 +68,118 @@
     line-height: 38px;
     color: #FFFFFF;
 }
+.header__hidden{
+    transition: all 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(-90px);
+}
 .header-fixed{
     position: fixed;
     opacity: 1 !important;
     transform: translate(0) !important;
+}
+.header__mobile-btn{
+    display: none;
+    padding: 20px 0 20px 40px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.header__mobile-btn::before{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    width: 40px;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: transform 0.36s ease-in-out;
+}
+.header__mobile-btn::after{
+    content: '';
+    position: absolute;
+    bottom: 30%;
+    left: 40px;
+    width: 40px;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: transform 0.36s ease-in-out;
+}
+.header__mobile-btn-p{
+    width: 40px;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: all 0.36s ease-in-out;
+}
+.header__mobile{
+    padding: 100px 80px;
+    display: none;
+    position: absolute;
+    top: 71px;
+    right: -240px;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #242424;
+    transition: all 0.36s ease-in-out;
+    border-radius: 0 0 0 20px;
+}
+.header__mobile-active{
+    right: 0;
+}
+.header-mobile__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 120px;
+}
+.header-mobile__nav-link{
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.header-mobile__cabinet__title{
+    font-size: 20px;
+}
+.header__mobile-btn-active p{
+    display: none;
+}
+.header__mobile-btn-active::after{
+    top: 50%;
+    left: 50%;
+    transform: rotate(45deg) translate(-13%, -50%);
+}
+.header__mobile-btn-active::before{
+    bottom: 50%;
+    left: 50%;
+    transform: rotate(-45deg) translate(-16%, -50%);
+}
+@media (max-width: 680px){
+    .header__cabinet__title{
+        font-size: 20px;
+        margin-left: 6px;
+    }
+    .header__nav-link{
+        font-size: 16px;
+    }
+    .header__nav{
+        max-width: 200px;
+    }
+    .header__logo{
+        font-size: 24px;
+    }
+}
+@media (max-width: 560px){
+    .header__nav{
+        display: none;
+    }
+    .header__cabinet{
+        display: none;
+    }
+    .header__mobile-btn{
+        display: flex;  
+    }
+    .header__mobile{
+        display: flex;
+    }
 }
