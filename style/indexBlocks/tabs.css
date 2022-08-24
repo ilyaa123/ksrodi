@@ -103,4 +103,10 @@
     .tabs__item-btn{
         padding: 20px 12px 0;
     }
+    .tabs__item-btn p{
+        max-width: 100%;
+    }
+    .tabs__item-btn::after{
+        display: none;
+    }
 }
