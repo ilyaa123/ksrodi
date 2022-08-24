@@ -137,6 +137,15 @@
         align-items: flex-start;
     }
     .hero__button-btn{
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+    }
+}
+@media (max-height: 380px){
+    .hero__title{
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+    .hero__subtitle{
+        margin-bottom: 6px;
     }
 }

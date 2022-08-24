@@ -67,6 +67,7 @@
     font-size: 26px;
     line-height: 38px;
     color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
 }
 .header__hidden{
     transition: all 1s ease-in-out;
@@ -167,6 +168,13 @@
     }
     .header__logo{
         font-size: 24px;
+    }
+    .header__hidden{
+        opacity: 1;
+        transform: none;
+    }
+    .header-fixed{
+        position: absolute;
     }
 }
 @media (max-width: 560px){

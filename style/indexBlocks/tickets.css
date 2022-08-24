@@ -30,6 +30,7 @@
     font-size: 36px;
     line-height: 43px;
     color: #000000;
+    border-bottom: 2px solid #000000;
 }
 .tickets__form{
     height: 560px;
@@ -81,4 +82,32 @@
     font-size: 24px;
     line-height: 28px;
     color: #000000;
+}
+@media (max-width: 940px) {
+    .tickets__title{
+        margin-right: 20px;
+    }
+}
+@media (max-width: 720px){
+    .tickets{
+        padding: 60px 0;
+    }
+    .tickets__container{
+        flex-direction: column;
+    }
+}
+@media (max-width: 420px){
+    .tickets__title{
+        font-size: 32px;
+        margin: 0;
+    }
+    .tickets__person{
+        font-size: 28px;
+    }
+    .tickets__form{
+        height: 400px;
+    }
+    .tickets__message{
+        padding: 40px 10px;
+    }
 }

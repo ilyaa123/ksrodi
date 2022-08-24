@@ -128,3 +128,39 @@
     border-color: #6FBAFF;
     color: #FFFFFF;
 }
+@media (max-width: 1260px) {
+    .about__container{
+        margin-left: 0;
+    }
+}
+@media (max-width: 980px){
+    .video__container{
+        display: none;
+    }
+    .about__container{
+        align-items: center;
+    }
+    .about__video{
+        padding-bottom: 0;
+        margin-right: 40px;
+    }
+    .about__content{
+        padding: 100px 97px 50px;
+    }
+}
+@media (max-width: 720px){
+    .about__video{
+        display: none;
+    }
+    .about__content{
+        width: 100%;
+    }
+}
+@media (max-width: 420px){
+    .about__content{
+        padding: 80px 70px 30px;
+    }
+    .about__benefits-list{
+        margin-bottom: 80px;
+    }
+}

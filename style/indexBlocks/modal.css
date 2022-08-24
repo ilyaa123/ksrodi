@@ -1,4 +1,5 @@
 .overlay{
+    visibility: hidden;
     position: fixed;
     inset: 0;
     width: 100%;
@@ -11,7 +12,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
     opacity: 0;
     transition: all 0.36s ease-in-out;
 }
@@ -99,9 +99,50 @@
     transform: translateX(0);
 }
 .overlay-active{
+    display: flex;
     visibility: visible;
     opacity: 1;
 }
 .modal__signin-active{
     transform: translateX(-354px);
+}
+@media (max-width: 580px) {
+    .modal{
+        padding: 30px 54px 85px;
+    }
+    .modal__content{
+        width: 280px;
+    }
+    .modal__container{
+        width: 560px;
+    }
+    .modal__inp{
+        width: 280px;
+    }
+    .modal__signin-active{
+        transform: translateX(-280px);
+    }
+}
+@media (max-width: 480px) {
+    .modal{
+        padding: 30px 30px 45px;
+    }
+    .modal__content{
+        width: 240px;
+    }
+    .modal__container{
+        width: 480px;
+    }
+    .modal__inp{
+        width: 240px;
+    }
+    .modal__signin-active{
+        transform: translateX(-240px);
+    }
+    .modal__btn-container{
+        margin-bottom: 40px;
+    }
+    .modal__container form{
+        gap: 20px;
+    }
 }

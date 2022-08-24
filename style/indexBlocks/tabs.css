@@ -55,3 +55,52 @@
 .tabs__item-content-active{
     height: 80px;
 }
+@media (max-width: 1040px) {
+    .tabs__title{
+        font-size: 32px;
+    }
+    .tabs__item{
+        padding: 0 20px 32px 46px;
+    }
+    .tabs__item-btn p{
+        max-width: 300px;
+    }
+}
+@media (max-width: 680px){
+    .tabs{
+        padding: 100px 0 0;
+    }
+    .tabs__item{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 560px){
+    .tabs__item-btn::after{
+        display: block;
+        width: 36px;
+        height: 36px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .tabs__item-btn p{
+        font-size: 26px;
+    }
+    .tabs__item-content{
+        font-size: 18px;
+        padding: 0 12px;
+    }
+    .tabs__item{
+        padding: 0 10px 22px 16px;
+    }
+}
+@media (max-width: 480px){
+    .tabs__item-btn p{
+        max-width: 200px;
+    }
+}
+@media (max-width: 380px){
+    .tabs__item-btn{
+        padding: 20px 12px 0;
+    }
+}
